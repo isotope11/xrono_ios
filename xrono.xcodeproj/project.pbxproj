@@ -15,6 +15,9 @@
 		86849FA31595602D0097BCDD /* xronoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86849FA21595602D0097BCDD /* xronoAppDelegate.m */; };
 		86849FA61595602D0097BCDD /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86849FA41595602D0097BCDD /* MainStoryboard.storyboard */; };
 		86849FA91595602D0097BCDD /* xronoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86849FA81595602D0097BCDD /* xronoViewController.m */; };
+		86C64407159560A600E71954 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 86C64406159560A600E71954 /* logo.png */; };
+		86C6440A159560AD00E71954 /* hourglass.png in Resources */ = {isa = PBXBuildFile; fileRef = 86C64409159560AD00E71954 /* hourglass.png */; };
+		86C6440C159564C800E71954 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86C6440B159564C800E71954 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +25,18 @@
 		86849F921595602D0097BCDD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		86849F941595602D0097BCDD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		86849F961595602D0097BCDD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		86849F9A1595602D0097BCDD /* xrono-Info.plist */ = {isa = PBXFileReference; path = "xrono-Info.plist"; sourceTree = "<group>"; };
+		86849F9A1595602D0097BCDD /* xrono-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "xrono-Info.plist"; sourceTree = "<group>"; };
 		86849F9C1595602D0097BCDD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		86849F9E1595602D0097BCDD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		86849FA01595602D0097BCDD /* xrono-Prefix.pch */ = {isa = PBXFileReference; path = "xrono-Prefix.pch"; sourceTree = "<group>"; };
-		86849FA11595602D0097BCDD /* xronoAppDelegate.h */ = {isa = PBXFileReference; path = xronoAppDelegate.h; sourceTree = "<group>"; };
+		86849FA01595602D0097BCDD /* xrono-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "xrono-Prefix.pch"; sourceTree = "<group>"; };
+		86849FA11595602D0097BCDD /* xronoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xronoAppDelegate.h; sourceTree = "<group>"; };
 		86849FA21595602D0097BCDD /* xronoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xronoAppDelegate.m; sourceTree = "<group>"; };
 		86849FA51595602D0097BCDD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		86849FA71595602D0097BCDD /* xronoViewController.h */ = {isa = PBXFileReference; path = xronoViewController.h; sourceTree = "<group>"; };
+		86849FA71595602D0097BCDD /* xronoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xronoViewController.h; sourceTree = "<group>"; };
 		86849FA81595602D0097BCDD /* xronoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xronoViewController.m; sourceTree = "<group>"; };
+		86C64406159560A600E71954 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		86C64409159560AD00E71954 /* hourglass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hourglass.png; sourceTree = "<group>"; };
+		86C6440B159564C800E71954 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86C6440C159564C800E71954 /* QuartzCore.framework in Frameworks */,
 				86849F931595602D0097BCDD /* UIKit.framework in Frameworks */,
 				86849F951595602D0097BCDD /* Foundation.framework in Frameworks */,
 				86849F971595602D0097BCDD /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +57,7 @@
 		86849F831595602D0097BCDD = {
 			isa = PBXGroup;
 			children = (
+				86C6440B159564C800E71954 /* QuartzCore.framework */,
 				86849F981595602D0097BCDD /* xrono */,
 				86849F911595602D0097BCDD /* Frameworks */,
 				86849F8F1595602D0097BCDD /* Products */,
@@ -90,6 +98,8 @@
 		86849F991595602D0097BCDD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				86C64409159560AD00E71954 /* hourglass.png */,
+				86C64406159560A600E71954 /* logo.png */,
 				86849F9A1595602D0097BCDD /* xrono-Info.plist */,
 				86849F9B1595602D0097BCDD /* InfoPlist.strings */,
 				86849F9E1595602D0097BCDD /* main.m */,
@@ -151,6 +161,8 @@
 			files = (
 				86849F9D1595602D0097BCDD /* InfoPlist.strings in Resources */,
 				86849FA61595602D0097BCDD /* MainStoryboard.storyboard in Resources */,
+				86C64407159560A600E71954 /* logo.png in Resources */,
+				86C6440A159560AD00E71954 /* hourglass.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +287,7 @@
 				86849FAE1595602D0097BCDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
 
-@interface xronoViewController : UIViewController
+@interface xronoViewController : UIViewController <UITextFieldDelegate>
+@property (weak, nonatomic) IBOutlet UIImageView *xrono_logo;
+@property (weak, nonatomic) IBOutlet UITextField *password_field;
+@property (weak, nonatomic) IBOutlet UITextField *email_field;
+@property (weak, nonatomic) IBOutlet UIView *textfieldView;
+@property (weak, nonatomic) IBOutlet UIView *hourGlassView;
+@property (weak, nonatomic) IBOutlet UIView *hourGlassHolderView;
 
 @end
