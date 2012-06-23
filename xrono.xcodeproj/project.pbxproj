@@ -1,0 +1,282 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		86849F931595602D0097BCDD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86849F921595602D0097BCDD /* UIKit.framework */; };
+		86849F951595602D0097BCDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86849F941595602D0097BCDD /* Foundation.framework */; };
+		86849F971595602D0097BCDD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86849F961595602D0097BCDD /* CoreGraphics.framework */; };
+		86849F9D1595602D0097BCDD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86849F9B1595602D0097BCDD /* InfoPlist.strings */; };
+		86849F9F1595602D0097BCDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86849F9E1595602D0097BCDD /* main.m */; };
+		86849FA31595602D0097BCDD /* xronoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86849FA21595602D0097BCDD /* xronoAppDelegate.m */; };
+		86849FA61595602D0097BCDD /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86849FA41595602D0097BCDD /* MainStoryboard.storyboard */; };
+		86849FA91595602D0097BCDD /* xronoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86849FA81595602D0097BCDD /* xronoViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		86849F8E1595602D0097BCDD /* xrono.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xrono.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		86849F921595602D0097BCDD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		86849F941595602D0097BCDD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		86849F961595602D0097BCDD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		86849F9A1595602D0097BCDD /* xrono-Info.plist */ = {isa = PBXFileReference; path = "xrono-Info.plist"; sourceTree = "<group>"; };
+		86849F9C1595602D0097BCDD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		86849F9E1595602D0097BCDD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		86849FA01595602D0097BCDD /* xrono-Prefix.pch */ = {isa = PBXFileReference; path = "xrono-Prefix.pch"; sourceTree = "<group>"; };
+		86849FA11595602D0097BCDD /* xronoAppDelegate.h */ = {isa = PBXFileReference; path = xronoAppDelegate.h; sourceTree = "<group>"; };
+		86849FA21595602D0097BCDD /* xronoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xronoAppDelegate.m; sourceTree = "<group>"; };
+		86849FA51595602D0097BCDD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		86849FA71595602D0097BCDD /* xronoViewController.h */ = {isa = PBXFileReference; path = xronoViewController.h; sourceTree = "<group>"; };
+		86849FA81595602D0097BCDD /* xronoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xronoViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		86849F8B1595602D0097BCDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86849F931595602D0097BCDD /* UIKit.framework in Frameworks */,
+				86849F951595602D0097BCDD /* Foundation.framework in Frameworks */,
+				86849F971595602D0097BCDD /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		86849F831595602D0097BCDD = {
+			isa = PBXGroup;
+			children = (
+				86849F981595602D0097BCDD /* xrono */,
+				86849F911595602D0097BCDD /* Frameworks */,
+				86849F8F1595602D0097BCDD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		86849F8F1595602D0097BCDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				86849F8E1595602D0097BCDD /* xrono.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		86849F911595602D0097BCDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86849F921595602D0097BCDD /* UIKit.framework */,
+				86849F941595602D0097BCDD /* Foundation.framework */,
+				86849F961595602D0097BCDD /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		86849F981595602D0097BCDD /* xrono */ = {
+			isa = PBXGroup;
+			children = (
+				86849FA11595602D0097BCDD /* xronoAppDelegate.h */,
+				86849FA21595602D0097BCDD /* xronoAppDelegate.m */,
+				86849FA41595602D0097BCDD /* MainStoryboard.storyboard */,
+				86849FA71595602D0097BCDD /* xronoViewController.h */,
+				86849FA81595602D0097BCDD /* xronoViewController.m */,
+				86849F991595602D0097BCDD /* Supporting Files */,
+			);
+			path = xrono;
+			sourceTree = "<group>";
+		};
+		86849F991595602D0097BCDD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				86849F9A1595602D0097BCDD /* xrono-Info.plist */,
+				86849F9B1595602D0097BCDD /* InfoPlist.strings */,
+				86849F9E1595602D0097BCDD /* main.m */,
+				86849FA01595602D0097BCDD /* xrono-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		86849F8D1595602D0097BCDD /* xrono */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86849FAC1595602D0097BCDD /* Build configuration list for PBXNativeTarget "xrono" */;
+			buildPhases = (
+				86849F8A1595602D0097BCDD /* Sources */,
+				86849F8B1595602D0097BCDD /* Frameworks */,
+				86849F8C1595602D0097BCDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = xrono;
+			productName = xrono;
+			productReference = 86849F8E1595602D0097BCDD /* xrono.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		86849F851595602D0097BCDD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = xrono;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 86849F881595602D0097BCDD /* Build configuration list for PBXProject "xrono" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 86849F831595602D0097BCDD;
+			productRefGroup = 86849F8F1595602D0097BCDD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				86849F8D1595602D0097BCDD /* xrono */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		86849F8C1595602D0097BCDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86849F9D1595602D0097BCDD /* InfoPlist.strings in Resources */,
+				86849FA61595602D0097BCDD /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		86849F8A1595602D0097BCDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86849F9F1595602D0097BCDD /* main.m in Sources */,
+				86849FA31595602D0097BCDD /* xronoAppDelegate.m in Sources */,
+				86849FA91595602D0097BCDD /* xronoViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		86849F9B1595602D0097BCDD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86849F9C1595602D0097BCDD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		86849FA41595602D0097BCDD /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86849FA51595602D0097BCDD /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		86849FAA1595602D0097BCDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		86849FAB1595602D0097BCDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		86849FAD1595602D0097BCDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "xrono/xrono-Prefix.pch";
+				INFOPLIST_FILE = "xrono/xrono-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		86849FAE1595602D0097BCDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "xrono/xrono-Prefix.pch";
+				INFOPLIST_FILE = "xrono/xrono-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		86849F881595602D0097BCDD /* Build configuration list for PBXProject "xrono" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86849FAA1595602D0097BCDD /* Debug */,
+				86849FAB1595602D0097BCDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86849FAC1595602D0097BCDD /* Build configuration list for PBXNativeTarget "xrono" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86849FAD1595602D0097BCDD /* Debug */,
+				86849FAE1595602D0097BCDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 86849F851595602D0097BCDD /* Project object */;
+}
