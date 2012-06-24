@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86279E3915958ECD0039818D /* loggedInTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86279E3815958ECD0039818D /* loggedInTabBarController.m */; };
+		86279E3D15958F940039818D /* settingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86279E3C15958F940039818D /* settingsViewController.m */; };
+		86279E43159596540039818D /* todayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86279E42159596540039818D /* todayViewController.m */; };
+		86279E461595D8680039818D /* pickClientTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86279E451595D8680039818D /* pickClientTableViewController.m */; };
+		86279E491596975D0039818D /* pickWorkUnitDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86279E481596975D0039818D /* pickWorkUnitDateViewController.m */; };
+		86279E4C159698910039818D /* pickProjectTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86279E4B159698910039818D /* pickProjectTableViewController.m */; };
+		86279E4F15969AEA0039818D /* pickTicketTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86279E4E15969AEA0039818D /* pickTicketTableViewController.m */; };
+		86279E5215969BA60039818D /* lastWorkUnitStepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86279E5115969BA60039818D /* lastWorkUnitStepViewController.m */; };
 		86849F931595602D0097BCDD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86849F921595602D0097BCDD /* UIKit.framework */; };
 		86849F951595602D0097BCDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86849F941595602D0097BCDD /* Foundation.framework */; };
 		86849F971595602D0097BCDD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86849F961595602D0097BCDD /* CoreGraphics.framework */; };
@@ -14,13 +22,29 @@
 		86849F9F1595602D0097BCDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86849F9E1595602D0097BCDD /* main.m */; };
 		86849FA31595602D0097BCDD /* xronoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86849FA21595602D0097BCDD /* xronoAppDelegate.m */; };
 		86849FA61595602D0097BCDD /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86849FA41595602D0097BCDD /* MainStoryboard.storyboard */; };
-		86849FA91595602D0097BCDD /* xronoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86849FA81595602D0097BCDD /* xronoViewController.m */; };
+		86849FA91595602D0097BCDD /* loginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86849FA81595602D0097BCDD /* loginViewController.m */; };
 		86C64407159560A600E71954 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 86C64406159560A600E71954 /* logo.png */; };
 		86C6440A159560AD00E71954 /* hourglass.png in Resources */ = {isa = PBXBuildFile; fileRef = 86C64409159560AD00E71954 /* hourglass.png */; };
 		86C6440C159564C800E71954 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86C6440B159564C800E71954 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		86279E3715958ECD0039818D /* loggedInTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = loggedInTabBarController.h; path = ../loggedInTabBarController.h; sourceTree = "<group>"; };
+		86279E3815958ECD0039818D /* loggedInTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = loggedInTabBarController.m; path = ../loggedInTabBarController.m; sourceTree = "<group>"; };
+		86279E3B15958F940039818D /* settingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = settingsViewController.h; sourceTree = "<group>"; };
+		86279E3C15958F940039818D /* settingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = settingsViewController.m; sourceTree = "<group>"; };
+		86279E41159596540039818D /* todayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = todayViewController.h; path = ../todayViewController.h; sourceTree = "<group>"; };
+		86279E42159596540039818D /* todayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = todayViewController.m; path = ../todayViewController.m; sourceTree = "<group>"; };
+		86279E441595D8680039818D /* pickClientTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pickClientTableViewController.h; path = ../pickClientTableViewController.h; sourceTree = "<group>"; };
+		86279E451595D8680039818D /* pickClientTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = pickClientTableViewController.m; path = ../pickClientTableViewController.m; sourceTree = "<group>"; };
+		86279E471596975D0039818D /* pickWorkUnitDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pickWorkUnitDateViewController.h; sourceTree = "<group>"; };
+		86279E481596975D0039818D /* pickWorkUnitDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pickWorkUnitDateViewController.m; sourceTree = "<group>"; };
+		86279E4A159698910039818D /* pickProjectTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pickProjectTableViewController.h; path = ../pickProjectTableViewController.h; sourceTree = "<group>"; };
+		86279E4B159698910039818D /* pickProjectTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = pickProjectTableViewController.m; path = ../pickProjectTableViewController.m; sourceTree = "<group>"; };
+		86279E4D15969AEA0039818D /* pickTicketTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pickTicketTableViewController.h; sourceTree = "<group>"; };
+		86279E4E15969AEA0039818D /* pickTicketTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pickTicketTableViewController.m; sourceTree = "<group>"; };
+		86279E5015969BA60039818D /* lastWorkUnitStepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lastWorkUnitStepViewController.h; sourceTree = "<group>"; };
+		86279E5115969BA60039818D /* lastWorkUnitStepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lastWorkUnitStepViewController.m; sourceTree = "<group>"; };
 		86849F8E1595602D0097BCDD /* xrono.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xrono.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86849F921595602D0097BCDD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		86849F941595602D0097BCDD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -32,8 +56,8 @@
 		86849FA11595602D0097BCDD /* xronoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xronoAppDelegate.h; sourceTree = "<group>"; };
 		86849FA21595602D0097BCDD /* xronoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xronoAppDelegate.m; sourceTree = "<group>"; };
 		86849FA51595602D0097BCDD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		86849FA71595602D0097BCDD /* xronoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xronoViewController.h; sourceTree = "<group>"; };
-		86849FA81595602D0097BCDD /* xronoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xronoViewController.m; sourceTree = "<group>"; };
+		86849FA71595602D0097BCDD /* loginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = loginViewController.h; sourceTree = "<group>"; };
+		86849FA81595602D0097BCDD /* loginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = loginViewController.m; sourceTree = "<group>"; };
 		86C64406159560A600E71954 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		86C64409159560AD00E71954 /* hourglass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hourglass.png; sourceTree = "<group>"; };
 		86C6440B159564C800E71954 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -85,11 +109,27 @@
 		86849F981595602D0097BCDD /* xrono */ = {
 			isa = PBXGroup;
 			children = (
+				86279E4A159698910039818D /* pickProjectTableViewController.h */,
+				86279E4B159698910039818D /* pickProjectTableViewController.m */,
+				86279E4D15969AEA0039818D /* pickTicketTableViewController.h */,
+				86279E4E15969AEA0039818D /* pickTicketTableViewController.m */,
+				86279E441595D8680039818D /* pickClientTableViewController.h */,
+				86279E451595D8680039818D /* pickClientTableViewController.m */,
+				86279E41159596540039818D /* todayViewController.h */,
+				86279E42159596540039818D /* todayViewController.m */,
+				86279E3715958ECD0039818D /* loggedInTabBarController.h */,
+				86279E3815958ECD0039818D /* loggedInTabBarController.m */,
 				86849FA11595602D0097BCDD /* xronoAppDelegate.h */,
 				86849FA21595602D0097BCDD /* xronoAppDelegate.m */,
 				86849FA41595602D0097BCDD /* MainStoryboard.storyboard */,
-				86849FA71595602D0097BCDD /* xronoViewController.h */,
-				86849FA81595602D0097BCDD /* xronoViewController.m */,
+				86279E5015969BA60039818D /* lastWorkUnitStepViewController.h */,
+				86279E5115969BA60039818D /* lastWorkUnitStepViewController.m */,
+				86279E471596975D0039818D /* pickWorkUnitDateViewController.h */,
+				86279E481596975D0039818D /* pickWorkUnitDateViewController.m */,
+				86279E3B15958F940039818D /* settingsViewController.h */,
+				86279E3C15958F940039818D /* settingsViewController.m */,
+				86849FA71595602D0097BCDD /* loginViewController.h */,
+				86849FA81595602D0097BCDD /* loginViewController.m */,
 				86849F991595602D0097BCDD /* Supporting Files */,
 			);
 			path = xrono;
@@ -175,7 +215,15 @@
 			files = (
 				86849F9F1595602D0097BCDD /* main.m in Sources */,
 				86849FA31595602D0097BCDD /* xronoAppDelegate.m in Sources */,
-				86849FA91595602D0097BCDD /* xronoViewController.m in Sources */,
+				86849FA91595602D0097BCDD /* loginViewController.m in Sources */,
+				86279E3915958ECD0039818D /* loggedInTabBarController.m in Sources */,
+				86279E3D15958F940039818D /* settingsViewController.m in Sources */,
+				86279E43159596540039818D /* todayViewController.m in Sources */,
+				86279E461595D8680039818D /* pickClientTableViewController.m in Sources */,
+				86279E491596975D0039818D /* pickWorkUnitDateViewController.m in Sources */,
+				86279E4C159698910039818D /* pickProjectTableViewController.m in Sources */,
+				86279E4F15969AEA0039818D /* pickTicketTableViewController.m in Sources */,
+				86279E5215969BA60039818D /* lastWorkUnitStepViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
