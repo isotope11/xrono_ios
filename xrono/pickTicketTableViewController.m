@@ -7,12 +7,16 @@
 //
 
 #import "pickTicketTableViewController.h"
+#import "pickTicketTableViewController.h"
 
 @interface pickTicketTableViewController ()
 
 @end
 
 @implementation pickTicketTableViewController
+@synthesize LoginData;
+@synthesize project_id;
+@synthesize tickets;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -26,7 +30,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    web_service = [[XronoWebserviceController alloc] init];
+    NSArray *local_tickets = [web_service loadTicketsForProject:self.project_id auth_token:[[self LoginData] objectForKey:@"token"]];
+    
+    [self setTickets:local_tickets];
+    NSLog(@"Tickets....%@",local_tickets);
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -56,7 +64,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 3;
+    return [[self tickets] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -67,56 +75,9 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
     }
     // Configure the cell...
-    if (indexPath.row == 0) {
-        cell.textLabel.text = @"Morning Scrum";
-    }
-    if (indexPath.row == 1) {
-        cell.textLabel.text = @"Work on implementation of circut gem";
-    }
-    if (indexPath.row == 2) {
-        cell.textLabel.text = @"Add press releases";
-    }
+    cell.textLabel.text = [[[self tickets] objectAtIndex:indexPath.row] objectForKey:@"name"];
     return cell;
 }
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
 #pragma mark - Table view delegate
 
@@ -131,5 +92,7 @@
      */
     [self performSegueWithIdentifier:@"ticketToLastStep" sender:self];
 }
+
+
 
 @end

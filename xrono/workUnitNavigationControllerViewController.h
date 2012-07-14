@@ -1,14 +1,13 @@
 //
-//  pickWorkUnitDateViewController.h
+//  workUnitNavigationControllerViewController.h
 //  xrono
 //
-//  Created by Adam Gamble on 6/23/12.
+//  Created by Adam Gamble on 7/13/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface pickWorkUnitDateViewController : UITableViewController
-
+@interface workUnitNavigationControllerViewController : UINavigationController
 @property (nonatomic, strong) NSDictionary *LoginData;
 @end

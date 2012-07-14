@@ -16,5 +16,6 @@
 @property (weak, nonatomic) IBOutlet UIView *textfieldView;
 @property (weak, nonatomic) IBOutlet UIView *hourGlassView;
 @property (weak, nonatomic) IBOutlet UIView *hourGlassHolderView;
-
+@property (weak, nonatomic) IBOutlet UILabel *loginUnsuccessful;
+@property (weak, nonatomic) NSDictionary *login_data;
 @end

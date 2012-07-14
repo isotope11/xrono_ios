@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "xronoWebServiceController.h"
 
-@interface pickTicketTableViewController : UITableViewController
+@interface pickTicketTableViewController : UITableViewController {
+    XronoWebserviceController *web_service;
+}
+@property  NSDictionary *LoginData;
+@property NSInteger *project_id;
+@property NSArray *tickets;
 
 @end

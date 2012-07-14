@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface loggedInTabBarController : UITabBarController
+@interface loggedInTabBarController : UITabBarController{
 
+}
+@property (nonatomic, weak) NSDictionary *LoginData;
 @end

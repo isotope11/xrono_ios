@@ -7,21 +7,14 @@
 //
 
 #import "todayViewController.h"
+#import "workUnitNavigationControllerViewController.h"
 
 @interface todayViewController ()
 
 @end
 
 @implementation todayViewController
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
+@synthesize LoginData;
 
 - (void)viewDidLoad
 {
@@ -58,24 +51,30 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"CountryCell";
-    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
     }
     if ([indexPath row] == 0) {
-        cell.textLabel.text = @"Today's Hours";
-        cell.detailTextLabel.text = @"6.5";
+        cell.textLabel.text = @"Hours on this check";
+        cell.detailTextLabel.text = [[self LoginData] objectForKey:@"current_hours"];
     } 
     if ([indexPath row] == 1) {
-        cell.textLabel.text = @"Week's Hours";
-        cell.detailTextLabel.text = @"32";  
+        cell.textLabel.text = @"Paid Time Off";
+        cell.detailTextLabel.text = [[self LoginData] objectForKey:@"pto_hours"];  
     }
     if ([indexPath row] == 2) {
-        cell.textLabel.text = @"Pay Period's Hours";
-        cell.detailTextLabel.text = @"55.5";  
+        cell.textLabel.text = @"Offset";
+        cell.detailTextLabel.text = [[self LoginData] objectForKey:@"offset"];  
     }
     
     return cell;
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    workUnitNavigationControllerViewController *nav_controller = [segue destinationViewController];
+    [nav_controller setLoginData: [self LoginData]];
+}
+
 @end

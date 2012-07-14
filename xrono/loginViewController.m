@@ -7,6 +7,8 @@
 //
 
 #import "loginViewController.h"
+#import "xronoWebServiceController.h"
+#import "loggedInTabBarController.h"
 
 @interface loginViewController ()
 
@@ -19,6 +21,8 @@
 @synthesize hourGlassView;
 @synthesize hourGlassHolderView;
 @synthesize password_field;
+@synthesize loginUnsuccessful;
+@synthesize login_data;
 
 - (void)viewDidLoad
 {
@@ -50,23 +54,44 @@
     fullRotation.toValue = [NSNumber numberWithFloat:((360*M_PI)/180)];
     fullRotation.duration = 2;
     fullRotation.repeatCount = 1e100f;
-    
-    
-    [hourGlassHolderView.layer addAnimation:fullRotation forKey:@"360"];
-    [theTextField resignFirstResponder];
-    [NSTimer scheduledTimerWithTimeInterval:1.5 target:self selector:@selector(performSegue) userInfo:nil repeats:NO];
+    [theTextField resignFirstResponder];   
+    [hourGlassHolderView.layer addAnimation:fullRotation forKey:@"360"]; 
+    [NSTimer scheduledTimerWithTimeInterval:.5 target:self selector:@selector(attemptLogin) userInfo:nil repeats:NO];
     return YES;
-
 }
 
-- (void)performSegue
-{
-    [self performSegueWithIdentifier:@"loggedIn" sender:self];
+- (void)attemptLogin {
+    XronoWebserviceController *webservice = [[XronoWebserviceController alloc] init];
+    self.login_data = [webservice loginWithUsername:[email_field text] password:[password_field text]];
+    if ([[self.login_data objectForKey:@"success"] intValue] == 1) {
+        NSLog(@"Logged in!");
+        if ([[self.login_data objectForKey:@"admin"] intValue] == 1) {
+            [self performSegueWithIdentifier:@"admin_logged_in" sender:self];
+        } else if ([[self.login_data objectForKey:@"client"] intValue] == 1) {
+            [self performSegueWithIdentifier:@"client_logged_in" sender:self];
+        } else {
+            [self performSegueWithIdentifier:@"developer_logged_in" sender:self];
+        }
+        
+    } else {
+        NSLog(@"Not logged in!");
+        [self handleUnsuccessfulLogin];
+    }
+}
+
+- (void)handleUnsuccessfulLogin {
+    [hourGlassView.layer removeAllAnimations];
+    hourGlassView.hidden = true;
+    [email_field setText:@""];
+    [password_field setText:@""];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-
+    if ([[segue identifier] isEqualToString:@"developer_logged_in"]) {
+       loggedInTabBarController *tab_bar_controller = [segue destinationViewController];
+        [tab_bar_controller setLoginData: [self login_data]];
+    }
 }
 
 - (void)viewDidUnload

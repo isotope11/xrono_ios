@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface todayViewController : UIViewController <UITableViewDataSource>
-
+@interface todayViewController : UIViewController <UITableViewDataSource> {
+}
+@property (nonatomic,strong) NSDictionary *LoginData;
 @end

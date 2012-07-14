@@ -7,12 +7,14 @@
 //
 
 #import "pickWorkUnitDateViewController.h"
+#import "pickClientTableViewController.h"
 
 @interface pickWorkUnitDateViewController ()
 
 @end
 
 @implementation pickWorkUnitDateViewController
+@synthesize LoginData;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -21,6 +23,12 @@
         // Custom initialization
     }
     return self;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    pickClientTableViewController *client_controller = [segue destinationViewController];
+    [client_controller setLoginData: [self LoginData]];
 }
 
 - (void)viewDidLoad

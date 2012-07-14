@@ -7,13 +7,18 @@
 //
 
 #import "pickProjectTableViewController.h"
+#import "pickTicketTableViewController.h"
+
 
 @interface pickProjectTableViewController ()
 
 @end
 
 @implementation pickProjectTableViewController
-
+@synthesize LoginData;
+@synthesize client_id;
+@synthesize projects;
+@synthesize project_id;
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -26,7 +31,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    NSLog(@"Loading client: %@", self.client_id);
+    web_service = [[XronoWebserviceController alloc] init];
+    NSArray *local_projects = [web_service loadProjectsForClient:self.client_id auth_token:[[self LoginData] objectForKey:@"token"]];
+    [self setProjects:local_projects];
+    NSLog(@"Projects....%@",self.projects);
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -57,7 +66,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 5;
+    return [[self projects] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -67,21 +76,7 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
     }
-    if (indexPath.row == 0) {
-        cell.textLabel.text = @"Xrono";
-    }
-    if (indexPath.row == 1) {
-        cell.textLabel.text = @"Baker Hughes";
-    }
-    if (indexPath.row == 2) {
-        cell.textLabel.text = @"NCR";
-    }
-    if (indexPath.row == 3) {
-        cell.textLabel.text = @"Auto Parts Tomorrow";
-    }
-    if (indexPath.row == 4) {
-        cell.textLabel.text = @"Mr. Arlo";
-    }
+    cell.textLabel.text = [[[self projects] objectAtIndex:indexPath.row] objectForKey:@"name"];
     // Configure the cell...
     
     return cell;
@@ -130,14 +125,17 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+    NSInteger *local_project_id = [[[[self projects] objectAtIndex:indexPath.row] objectForKey:@"id"] intValue];
+    [self setProject_id:local_project_id];
     [self performSegueWithIdentifier:@"projectToTicket" sender:self];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    pickTicketTableViewController *ticket_controller = [segue destinationViewController];
+    [ticket_controller setLoginData: [self LoginData]];
+    [ticket_controller setProject_id:[self project_id]];
+    NSLog(@"TRYING TO SET Project ID %i", self.project_id);
 }
 
 @end
