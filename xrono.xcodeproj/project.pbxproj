@@ -28,6 +28,8 @@
 		8630293715B0CE2F002F38B3 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630292915B0CE2F002F38B3 /* SBJsonTokeniser.m */; };
 		8630293815B0CE2F002F38B3 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630292B15B0CE2F002F38B3 /* SBJsonUTF8Stream.m */; };
 		8630293915B0CE2F002F38B3 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630292D15B0CE2F002F38B3 /* SBJsonWriter.m */; };
+		865F6FB015B136EE00EF992C /* xrono_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 865F6FAF15B136EE00EF992C /* xrono_57.png */; };
+		865F6FB215B136F100EF992C /* xrono_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 865F6FB115B136F100EF992C /* xrono_114.png */; };
 		86849F931595602D0097BCDD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86849F921595602D0097BCDD /* UIKit.framework */; };
 		86849F951595602D0097BCDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86849F941595602D0097BCDD /* Foundation.framework */; };
 		86849F971595602D0097BCDD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86849F961595602D0097BCDD /* CoreGraphics.framework */; };
@@ -86,6 +88,8 @@
 		8630292B15B0CE2F002F38B3 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
 		8630292C15B0CE2F002F38B3 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		8630292D15B0CE2F002F38B3 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		865F6FAF15B136EE00EF992C /* xrono_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xrono_57.png; sourceTree = "<group>"; };
+		865F6FB115B136F100EF992C /* xrono_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xrono_114.png; sourceTree = "<group>"; };
 		86849F8E1595602D0097BCDD /* xrono.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xrono.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86849F921595602D0097BCDD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		86849F941595602D0097BCDD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -156,6 +160,8 @@
 		86849F831595602D0097BCDD = {
 			isa = PBXGroup;
 			children = (
+				865F6FB115B136F100EF992C /* xrono_114.png */,
+				865F6FAF15B136EE00EF992C /* xrono_57.png */,
 				8630291415B0CE1A002F38B3 /* SBJson */,
 				86C6440B159564C800E71954 /* QuartzCore.framework */,
 				86849F981595602D0097BCDD /* xrono */,
@@ -283,6 +289,8 @@
 				86849FA61595602D0097BCDD /* MainStoryboard.storyboard in Resources */,
 				86C64407159560A600E71954 /* logo.png in Resources */,
 				86C6440A159560AD00E71954 /* hourglass.png in Resources */,
+				865F6FB015B136EE00EF992C /* xrono_57.png in Resources */,
+				865F6FB215B136F100EF992C /* xrono_114.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
